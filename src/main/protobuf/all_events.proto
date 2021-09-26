@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package all_events;
+
+message Person {
+  required string name = 1;
+  required int32 id = 2;
+  optional string email = 3;
+}
+
+message OrderPlaced {
+  required int32 id = 1;
+  required string name = 2;
+  required bool fulfilled = 3;
+}
